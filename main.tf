@@ -1,8 +1,6 @@
 variable "foo" {
   type = string
-  default = jsonencode({
-    boop = "beep"
-  })
+  default = "{\"boop\":\"beep\"}"
 }
 
 resource "null_resource" "none" {
