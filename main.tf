@@ -14,9 +14,9 @@ variable "baz" {
 }
 
 resource "null_resource" "none" {
-  triggers = sensitive({
+  triggers = {
     foo = var.foo
     bar = var.bar
     baz = var.baz
-  })
+  }
 }
